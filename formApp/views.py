@@ -27,7 +27,7 @@ def feedback_input_view(request):
             print("FeedBack:",form.cleaned_data['feedback'])
             sent = True
     form = FeedBackForm()
-    return render(request,'FormApp/feedback.html',{'form':form,'sent':sent})
+    return render(request,'formApp/feedback.html',{'form':form,'sent':sent})
 
 #view for signup form
 def signup_form_view(request):
